@@ -1,0 +1,906 @@
+Updated IAM policy for organization [546434885099].
+bindings:
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/accesscontextmanager.policyAdmin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:balamurali.pandranki@endocodelab.com
+  - user:lisa@endocodelab.com
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/billing.admin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/billing.costsManager
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.creator
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/billing.user
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.viewer
+- members:
+  - domain:endocodelab.com
+  role: roles/browser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  role: roles/cloudasset.owner
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/cloudscheduler.admin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/cloudsupport.admin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - group:fast-support@endocodelab.com
+  role: roles/cloudsupport.techSupportEditor
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.networkAdmin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  role: roles/compute.orgFirewallPolicyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osAdminLogin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osLoginExternalUser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/compute.xpnAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/essentialcontacts.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/gkehub.admin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/iam.organizationRoleAdmin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.securityAdmin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/iam.securityReviewer
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountAdmin
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:awais.memon@endocodelab.com
+  - user:gizem.wanka@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/iam.serviceAccountTokenCreator
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/logging.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/logging.configWriter
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/logging.viewer
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/monitoring.viewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/orgpolicy.policyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/owner
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.folderAdmin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/resourcemanager.folderCreator
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationViewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectCreator
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectMover
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagAdmin
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagUser
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/securitycenter.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/securitycenter.notificationConfigEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/securitycenter.serviceAgent
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/servicemanagement.configEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageAdmin
+- members:
+  - serviceAccount:182103532839@cloudbuild.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageConsumer
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/storage.admin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  role: roles/viewer
+etag: BwXp4Di5Drg=
+version: 1
+Updated IAM policy for organization [546434885099].
+bindings:
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/accesscontextmanager.policyAdmin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:balamurali.pandranki@endocodelab.com
+  - user:lisa@endocodelab.com
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/billing.admin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/billing.costsManager
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.creator
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/billing.user
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.viewer
+- members:
+  - domain:endocodelab.com
+  role: roles/browser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  role: roles/cloudasset.owner
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/cloudscheduler.admin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/cloudsupport.admin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - group:fast-support@endocodelab.com
+  role: roles/cloudsupport.techSupportEditor
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.networkAdmin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  role: roles/compute.orgFirewallPolicyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osAdminLogin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osLoginExternalUser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/compute.xpnAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/essentialcontacts.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/gkehub.admin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/iam.organizationRoleAdmin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.securityAdmin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/iam.securityReviewer
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountAdmin
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:awais.memon@endocodelab.com
+  - user:gizem.wanka@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/iam.serviceAccountTokenCreator
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/logging.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/logging.configWriter
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/logging.viewer
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/monitoring.viewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/orgpolicy.policyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/owner
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.folderAdmin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/resourcemanager.folderCreator
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationViewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectCreator
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectMover
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagAdmin
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagUser
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/securitycenter.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/securitycenter.notificationConfigEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/securitycenter.serviceAgent
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/servicemanagement.configEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageAdmin
+- members:
+  - serviceAccount:182103532839@cloudbuild.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageConsumer
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/storage.admin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  role: roles/viewer
+etag: BwXp4Djb_xU=
+version: 1
+Updated IAM policy for organization [546434885099].
+bindings:
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/accesscontextmanager.policyAdmin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:balamurali.pandranki@endocodelab.com
+  - user:lisa@endocodelab.com
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/billing.admin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/billing.costsManager
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.creator
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/billing.user
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.viewer
+- members:
+  - domain:endocodelab.com
+  role: roles/browser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  role: roles/cloudasset.owner
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/cloudscheduler.admin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/cloudsupport.admin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - group:fast-support@endocodelab.com
+  role: roles/cloudsupport.techSupportEditor
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.networkAdmin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  role: roles/compute.orgFirewallPolicyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osAdminLogin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osLoginExternalUser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/compute.xpnAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/essentialcontacts.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/gkehub.admin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/iam.organizationRoleAdmin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.securityAdmin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/iam.securityReviewer
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountAdmin
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:awais.memon@endocodelab.com
+  - user:gizem.wanka@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/iam.serviceAccountTokenCreator
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/logging.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/logging.configWriter
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/logging.viewer
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/monitoring.viewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/orgpolicy.policyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/owner
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.folderAdmin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/resourcemanager.folderCreator
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationViewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectCreator
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectMover
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagAdmin
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagUser
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/securitycenter.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/securitycenter.notificationConfigEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/securitycenter.serviceAgent
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/servicemanagement.configEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageAdmin
+- members:
+  - serviceAccount:182103532839@cloudbuild.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageConsumer
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/storage.admin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  role: roles/viewer
+etag: BwXp4Dj_L6I=
+version: 1
+Updated IAM policy for organization [546434885099].
+bindings:
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/accesscontextmanager.policyAdmin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:balamurali.pandranki@endocodelab.com
+  - user:lisa@endocodelab.com
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/billing.admin
+- members:
+  - group:fast-billing-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/billing.costsManager
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.creator
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - group:group_org_admins@endocodelab.com
+  - group:team-test@endocodelab.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/billing.user
+- members:
+  - group:group_org_admins@endocodelab.com
+  role: roles/billing.viewer
+- members:
+  - domain:endocodelab.com
+  role: roles/browser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  role: roles/cloudasset.owner
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/cloudfunctions.serviceAgent
+- members:
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/cloudscheduler.admin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/cloudsupport.admin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - group:fast-support@endocodelab.com
+  role: roles/cloudsupport.techSupportEditor
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/compute.networkAdmin
+- members:
+  - group:fast-network-admins@endocodelab.com
+  role: roles/compute.orgFirewallPolicyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osAdminLogin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/compute.osLoginExternalUser
+- members:
+  - group:fast-network-admins@endocodelab.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-net-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/compute.xpnAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/essentialcontacts.admin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/gkehub.admin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/iam.organizationRoleAdmin
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.securityAdmin
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/iam.securityReviewer
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/iam.serviceAccountAdmin
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:awais.memon@endocodelab.com
+  - user:gizem.wanka@endocodelab.com
+  - user:ricardo.rodrigues@endocodelab.com
+  - user:safaa.zahir@endocodelab.com
+  role: roles/iam.serviceAccountTokenCreator
+- members:
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/logging.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/logging.configWriter
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/logging.viewer
+- members:
+  - group:fast-support@endocodelab.com
+  role: roles/monitoring.viewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - group:fast-security-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:aingaran.elango@endocodelab.com
+  - user:minto.joseph@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/orgpolicy.policyAdmin
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  role: roles/owner
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.folderAdmin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  - user:sebastian@endocodelab.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/resourcemanager.folderCreator
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationAdmin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/resourcemanager.organizationViewer
+- members:
+  - group:fast-organization-admins@endocodelab.com
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  - user:yongxin.chen@endocodelab.com
+  role: roles/resourcemanager.projectCreator
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - serviceAccount:edc-fast-prod-bootstrap-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.projectMover
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagAdmin
+- members:
+  - serviceAccount:edc-fast-prod-resman-0@edc-fast-prod-iac-core-0.iam.gserviceaccount.com
+  role: roles/resourcemanager.tagUser
+- members:
+  - group:fast-security-admins@endocodelab.com
+  role: roles/securitycenter.admin
+- members:
+  - serviceAccount:terraform-org-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-org-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/securitycenter.notificationConfigEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  role: roles/securitycenter.serviceAgent
+- members:
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/servicemanagement.configEditor
+- members:
+  - serviceAccount:service-org-546434885099@security-center-api.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageAdmin
+- members:
+  - serviceAccount:182103532839@cloudbuild.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-0f33.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-3991.iam.gserviceaccount.com
+  - serviceAccount:terraform-proj-sa@prj-b-seed-45ed.iam.gserviceaccount.com
+  role: roles/serviceusage.serviceUsageConsumer
+- members:
+  - serviceAccount:tf-github-actions@admin-project-314218.iam.gserviceaccount.com
+  - serviceAccount:tfadmin@admin-project-314218.iam.gserviceaccount.com
+  - user:sebastian@endocodelab.com
+  role: roles/storage.admin
+- members:
+  - deleted:group:endocoders@endocodelab.com?uid=501994260704585666285
+  role: roles/viewer
+etag: BwXp4DklsWY=
+version: 1

@@ -16,14 +16,14 @@
 
 module "stage" {
   source = "../../../../../fast/stages/00-bootstrap"
-  prefix = "fast"
+  prefix = "edc-fast"
   organization = {
-    domain      = "fast.example.com"
-    id          = 123456789012
-    customer_id = "C00000000"
+    domain      = "endocodelab.com"
+    id          = 546434885099
+    customer_id = "C000001"
   }
   billing_account = {
-    id              = "000000-111111-222222"
-    organization_id = 123456789012
+    id              = "013DC7-EC4FAA-E90811"
+    organization_id = 546434885099
   }
 }

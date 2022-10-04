@@ -130,12 +130,12 @@ variable "groups" {
   description = "Group names to grant organization-level permissions."
   type        = map(string)
   default = {
-    gcp-billing-admins      = "gcp-billing-admins",
-    gcp-devops              = "gcp-devops",
-    gcp-network-admins      = "gcp-network-admins"
-    gcp-organization-admins = "gcp-organization-admins"
-    gcp-security-admins     = "gcp-security-admins"
-    gcp-support             = "gcp-support"
+    gcp-billing-admins      = "fast-billing-admins"
+    gcp-devops              = "fast-devops"
+    gcp-network-admins      = "fast-network-admins"
+    gcp-organization-admins = "fast-organization-admins"
+    gcp-security-admins     = "fast-security-admins"
+    gcp-support             = "fast-support"
   }
 }
 
