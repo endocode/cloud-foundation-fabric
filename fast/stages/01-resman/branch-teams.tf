@@ -23,7 +23,7 @@
 module "branch-teams-folder" {
   source = "../../../modules/folder"
   count  = var.fast_features.teams ? 1 : 0
-  parent = "organizations/${var.organization.id}"
+  parent = var.parent.id ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
   name   = "Teams"
   iam = {
     "roles/logging.admin"                  = [module.branch-teams-sa.0.iam_email]
