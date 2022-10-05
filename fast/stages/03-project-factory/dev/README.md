@@ -55,6 +55,13 @@ It's of course possible to run this stage in isolation, by making sure the archi
 
 If you're running this on top of FAST, you should run the following commands to create the providers file, and populate the required variables from the previous stage.
 
+#### create a provider file for this stage if you haven't done it
+```bash
+# Variable `outputs_location` is set to `~/fast-config` in stage 01-resman
+cd ../01-resman
+terraform output -json providers | jq -r '.["03-project-factory"]' > ~/fast-config/providers/03-project-factory-dev-providers.tf
+```
+
 ```bash
 # Variable `outputs_location` is set to `~/fast-config` in stage 01-resman
 $ cd fabric-fast/stages/03-project-factory/dev
@@ -71,6 +78,12 @@ There are two broad sets of variables you will need to fill in:
 To avoid the tedious job of filling in the first group of variables with values derived from other stages' outputs, the same mechanism used above for the provider configuration can be used to leverage pre-configured `.tfvars` files.
 
 If you configured a valid path for `outputs_location` in the bootstrap and networking stage, simply link the relevant `terraform-*.auto.tfvars.json` files from this stage's outputs folder (under the path you specified), where the `*` above is set to the name of the stage that produced it. For this stage, a single `.tfvars` file is available:
+
+If you not yet have a `02-networking.auto.tfvars.json`:
+```bash
+#cd into 02-networking-[] folder you have applied, either VPN or NVA 
+terraform output -json tfvars > ~/fast-config/tfvars/02-networking.auto.tfvars.json
+```
 
 ```bash
 # Variable `outputs_location` is set to `~/fast-config`
