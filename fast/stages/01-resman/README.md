@@ -209,7 +209,7 @@ Due to its simplicity, this stage lends itself easily to customizations: adding 
 | [teams](outputs.tf#L304) | Data for the teams stage. |  |  |
 | [tfvars](outputs.tf#L317) | Terraform variable files for the following stages. | ✓ |  |
 
-### Note:
+## *Note:
 I added the `01-resman.auto.tfvars.json` for the next stage to 
 ```bash
  terraform output -json tfvars > ~/fast-config/tfvars/01-resman.auto.tfvars.json
