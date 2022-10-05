@@ -259,3 +259,11 @@ variable "vpn_onprem_configs" {
     }
   }
 }
+
+variable "parent" {
+  description = "Optional, instead of inherit form Organization, use parent folder."
+  type = object({
+    id = string
+  })
+  default = null
+}
