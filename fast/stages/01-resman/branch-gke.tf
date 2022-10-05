@@ -19,7 +19,7 @@
 module "branch-gke-folder" {
   source = "../../../modules/folder"
   count  = var.fast_features.gke ? 1 : 0
-  parent = var.parent.id ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
+  parent = var.parent != null ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
   name   = "GKE"
   tag_bindings = {
     context = try(

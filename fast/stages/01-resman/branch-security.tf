@@ -18,7 +18,7 @@
 
 module "branch-security-folder" {
   source = "../../../modules/folder"
-  parent = var.parent.id ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
+  parent = var.parent.id != null ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
   name   = "Security"
   group_iam = {
     (local.groups.gcp-security-admins) = [

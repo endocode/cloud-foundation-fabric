@@ -249,3 +249,11 @@ variable "team_folders" {
   }))
   default = null
 }
+
+variable "parent" {
+  description = "Optional, instead of inherit form Organization, use parent folder."
+  type = object({
+    id = string
+  })
+  default = null
+}

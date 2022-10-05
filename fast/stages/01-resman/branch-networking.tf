@@ -18,7 +18,7 @@
 
 module "branch-network-folder" {
   source = "../../../modules/folder"
-  parent = var.parent.id ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
+  parent = var.parent.id != null ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
   name   = "Networking"
   group_iam = {
     (local.groups.gcp-network-admins) = [

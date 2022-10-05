@@ -24,7 +24,7 @@ moved {
 module "branch-sandbox-folder" {
   source = "../../../modules/folder"
   count  = var.fast_features.sandbox ? 1 : 0
-  parent = var.parent.id ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
+  parent = var.parent.id != null ? "folders/${var.parent.id}" : "organizations/${var.organization.id}"
   name   = "Sandbox"
   iam = {
     "roles/logging.admin"                  = [module.branch-sandbox-sa.0.iam_email]
