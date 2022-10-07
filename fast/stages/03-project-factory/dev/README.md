@@ -34,7 +34,7 @@ It's of course possible to run this stage in isolation, by making sure the archi
 
 - One service account per environment, each with appropriate permissions
   - at the organization level a custom role for networking operations including the following permissions
-    - `"compute.organizations.enableXpnResource"`,
+    - `"compute.organizations.enableXpnResource"`, # Update: "roles/compute.xpnAdmin"
     - `"compute.organizations.disableXpnResource"`,
     - `"compute.subnetworks.setIamPolicy"`,
     - `"dns.networks.bindPrivateDNSZone"`

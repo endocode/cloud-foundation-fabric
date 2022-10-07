@@ -90,7 +90,7 @@ vpc:
     enable_security_admin: true
 
   # Host project the project will be service project of
-  host_project: fast-dev-net-spoke-0
+  host_project: edc-fast-dev-net-spoke-0
 
   # [opt] Subnets in the host project where principals will be granted networkUser
   # in region/subnet-name => [principals]

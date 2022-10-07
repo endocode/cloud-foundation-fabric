@@ -50,7 +50,7 @@ variable "prefix" {
   type        = string
 
   validation {
-    condition     = try(length(var.prefix), 0) < 10
+    condition     = try(length(var.prefix), 0) < 15
     error_message = "Use a maximum of 9 characters for prefix."
   }
 }
