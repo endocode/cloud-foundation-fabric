@@ -1,6 +1,6 @@
 # skip boilerplate check
 
-billing_account_id: 012345-67890A-BCDEF0
+billing_account_id: 013DC7-EC4FAA-E90811
 
 # [opt] Setup for billing alerts
 billing_alert:
@@ -11,7 +11,7 @@ billing_alert:
   credit_treatment: INCLUDE_ALL_CREDITS
 
 # [opt] Contacts for billing alerts and important notifications
-essential_contacts: ["team-contacts@example.com"]
+essential_contacts: ["yongxin.chen@endocodelab.com"]
 
 # [opt] Labels set for all projects
 labels:

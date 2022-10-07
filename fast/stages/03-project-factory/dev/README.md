@@ -51,7 +51,7 @@ It's of course possible to run this stage in isolation, by making sure the archi
 - If networking is used (e.g., for VMs, GKE Clusters or AppEngine flex), VPC Host projects and their subnets should exist when creating projects
 - If per-environment DNS sub-zones are required, one "root" zone per environment should exist when creating projects (e.g., dev.gcp.example.com.)
 
-### * Troubleshoot permissions
+### * Troubleshoot  *
 If you run into permission errors in this stage, please look up the service acccount that's provided in `03-project-factory-dev-providers` file. make sure it has all permissions above.
 
 ### Providers configuration
