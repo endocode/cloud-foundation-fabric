@@ -44,5 +44,6 @@ ln -s ~/fast-config/providers/01-resman-providers.tf .
 
 ```
 
-The steps are the same in the next stages, you just need to change the file name accordingly.
+- The steps are the same in the next stages, you just need to change the file name accordingly.
+- You can still create `terraform.tfvars` if you have custom vars, it might require some code changes and remember to add it to variables.
 
